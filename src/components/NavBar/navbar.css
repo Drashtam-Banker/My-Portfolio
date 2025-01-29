@@ -1,0 +1,151 @@
+/* Navbar Container */
+.navbar {
+    background-color: #3b5998;  /* Dark Blue */
+    height: 5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Ensure navbar content stays within bounds */
+.navbar .navbarContent {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.navbar .logo {
+    width: 15vw;   /* Makes the logo width 15% of the viewport width */
+    max-width: 120px;  /* Limits the logo's max width to 120px */
+    height: auto;  /* Ensures the logo maintains its aspect ratio */
+    transition: width 0.3s ease;  /* Smooth transition for resizing */
+}
+
+/* Desktop Menu Styling */
+.desktopMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktopMenuListItem {
+    margin: 0 1.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.desktopMenuListItem:hover,
+.desktopMenuListItem.active {
+    color: #FFD700;  /* Golden Yellow */
+    border-bottom: 3px solid #FFD700;  /* Underline on hover */
+}
+
+/* Desktop Button Styling */
+.desktopMenuBtn {
+    background-color: #FF6347;  /* Tomato Red */
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.desktopMenuBtn:hover {
+    background-color: #FF4500;  /* Darker Red */
+}
+
+.desktopMenuImg {
+    margin-right: 0.5rem;
+    height: 1.2rem;
+}
+
+/* Mobile Menu (Hidden by Default) */
+.mobMenu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Dropdown Menu for Mobile */
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    min-width: 15rem;
+}
+
+/* Mobile Menu Items */
+.listItem {
+    color: #3b5998;  /* Dark Blue */
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.listItem:hover {
+    background-color: #3b5998;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 720px) {
+    .navbar .desktopMenu {
+        display: none;  /* Hide desktop menu on mobile */
+    }
+
+    .navbar .desktopMenuBtn {
+        display: none;  /* Hide desktop button on mobile */
+    }
+
+    .navbar .mobMenu {
+        display: block;  /* Show the hamburger icon on mobile */
+    }
+
+    .navbar .navMenu {
+        display: none;  /* Mobile menu will be hidden by default */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .logo {
+        width: 20vw;  /* 20% of viewport width for smaller screens */
+        max-width: 100px;  /* Limits the max width for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        width: 30vw;  /* 30% of viewport width for very small screens */
+        max-width: 80px;  /* Limits the max width even further */
+    }
+}

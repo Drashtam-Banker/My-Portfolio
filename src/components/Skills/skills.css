@@ -1,0 +1,137 @@
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.skillBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    width: 15vw;
+    height: 7vw;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.skillBarText>h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skillBarText>p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem; /* Add equal padding on both sides */
+}
+
+.btnRow {
+    display: flex;
+    justify-content: flex-start; /* Adjust alignment of buttons */
+    margin-bottom: 0.5rem; /* Add margin between rows */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    width: 40%; /* Set a fixed width for the row */
+}
+
+.btnRowHeader {
+    font-weight: bold;
+    margin-bottom: 1rem; /* Add spacing below the header */
+    margin-top: 1rem;
+}
+
+.btn {
+    background: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    margin: 0 0.25rem; /* Adjust margin */
+    white-space: nowrap; /* Prevent button text from wrapping */
+    min-width: 8rem; /* Set minimum width for buttons */
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 720px) {
+    .btn {
+        padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+        font-size: 0.8rem; /* Reduce font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        padding: 0.75rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .btnImg {
+        height: 0.75rem; /* Adjust image height for smaller screens */
+    }
+}
+
+@media screen and (max-width:720px) {
+    .skillBarText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .skillBarText>p {
+        font-size: 3vw;
+    }
+    .skillBarText>h2 {
+        font-size: 5vw;
+    }
+}
+@media screen and (min-width: 768px) {
+    .btnRow {
+        overflow-x: visible; /* Remove horizontal scrolling for larger screens */
+        width: 100%;
+        justify-content: center; /* Adjust alignment of buttons */
+    }
+}
