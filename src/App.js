@@ -7,7 +7,7 @@ Drashtam Kinnar Banker
 
 */
 import React from 'react';
-import About from './components/About/about';
+import About from './components/about/about';
 import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 import Intro from './components/Intro/intro';
