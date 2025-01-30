@@ -1,3 +1,11 @@
+/*
+
+App.js
+Drashtam Kinnar Banker
+301497001
+25 Jan 2025
+
+*/
 import React from 'react';
 import About from './components/About/about';
 import Contact from './components/Contact/contact';

@@ -15,7 +15,7 @@ const Navbar = () => {
             {/* Desktop Menu */}
             <div className="desktopMenu">
                 <Link activeClass="active" to="intro" spy={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
-                <Link activeClass="active" to="intro" spy={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
+                <Link activeClass="active" to="about" spy={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
                 <Link activeClass="active" to="skills" spy={true} offset={-50} duration={500} className="desktopMenuListItem">Services</Link>
                 <Link activeClass="active" to="works" spy={true} offset={-50} duration={500} className="desktopMenuListItem">Projects</Link>
             </div>
