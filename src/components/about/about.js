@@ -1,3 +1,11 @@
+/*
+
+About.js
+Drashtam Kinnar Banker
+301497001
+25 Jan 2025
+
+*/
 import React from 'react';
 import bg from '../../assets/Drashtam.png'; // Your profile image
 import Resume from '../../assets/cv.pdf'; // Path to your resume

@@ -1,3 +1,11 @@
+/*
+
+Contact.js
+Drashtam Kinnar Banker
+301497001
+25 Jan 2025
+
+*/
 import emailjs from '@emailjs/browser';
 import React, { useRef } from "react";
 import GithubIcon from '../../assets/github.png';
