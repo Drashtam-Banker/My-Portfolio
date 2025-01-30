@@ -1,3 +1,11 @@
+/*
+
+Intro.js
+Drashtam Kinnar Banker
+301497001
+25 Jan 2025
+
+*/
 import React from 'react';
 import './intro.css';
 

@@ -1,32 +1,40 @@
+/*
+
+Skills.js
+Drashtam Kinnar Banker
+301497001
+25 Jan 2025
+
+*/
 import React from 'react';
-import './skills.css';
-import Swift from '../../assets/swift.png';
-import SwiftUI from '../../assets/swiftui.png';
-import ObjectiveC from '../../assets/objectivec.png';
-import Java from '../../assets/java.png';
-import ReactJS from '../../assets/react.png';
-import Javascript from '../../assets/javascript.png';
-import PythonImg from '../../assets/python.png';
-import SpringBoot from '../../assets/springboot.png';
-import CPP from '../../assets/cpp.png';
-import HtmlCss from '../../assets/html.png';
-import RestApi from '../../assets/rest.png';
-import JsonImg from '../../assets/json.png';
-import Xcode from '../../assets/Xcode.png';
 import AndroidStudio from '../../assets/android.png';
-import Eclipse from '../../assets/eclipse.png';
-import JupyterNotebook from '../../assets/Jupyter.png';
-import SqlWorkbench from '../../assets/sql.png';
 import AwsImg from '../../assets/AWS.png';
 import AzureImg from '../../assets/Azure.png';
-import JiraImg from '../../assets/Jira.png';
 import ConfluenceImg from '../../assets/Confluence.png';
-import GithubAction from '../../assets/GitHubActions.png';
-import GithubImg from '../../assets/github.png';
+import CPP from '../../assets/cpp.png';
+import Eclipse from '../../assets/eclipse.png';
 import FastlaneImg from '../../assets/fastlane.png';
-import TestFlightImg from '../../assets/testflight.png';
+import GithubImg from '../../assets/github.png';
+import GithubAction from '../../assets/GitHubActions.png';
+import HtmlCss from '../../assets/html.png';
+import Java from '../../assets/java.png';
+import Javascript from '../../assets/javascript.png';
 import JenkinsImg from '../../assets/Jenkins.png';
+import JiraImg from '../../assets/Jira.png';
+import JsonImg from '../../assets/json.png';
+import JupyterNotebook from '../../assets/Jupyter.png';
+import ObjectiveC from '../../assets/objectivec.png';
+import PythonImg from '../../assets/python.png';
+import ReactJS from '../../assets/react.png';
+import RestApi from '../../assets/rest.png';
+import SpringBoot from '../../assets/springboot.png';
+import SqlWorkbench from '../../assets/sql.png';
+import Swift from '../../assets/swift.png';
 import SwiftLintImg from '../../assets/swiftlint.png';
+import SwiftUI from '../../assets/swiftui.png';
+import TestFlightImg from '../../assets/testflight.png';
+import Xcode from '../../assets/Xcode.png';
+import './skills.css';
 
 const Skills = () => {
     return (
