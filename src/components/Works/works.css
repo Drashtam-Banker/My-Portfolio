@@ -1,78 +1,88 @@
+/* Increase size for the entire section */
 #works {
     margin: 0 auto;
     min-height: calc(80vh - 4rem);
     width: 100vw;
-    max-width: 60rem;
+    max-width: 80rem; /* Increase the max-width to fit larger content */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 2rem; /* Add more padding */
 }
 
+/* Increase the size of the title */
 .worksTitle {
-    margin: 1rem 0;
-    font-size: 3rem;
+    margin: 2rem 0;
+    font-size: 4rem; /* Increased font size */
     font-weight: 600;
     padding-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Increased bottom margin */
 }
 
+/* Increased font size for the description text */
 .worksDesc {
     font-weight: 300;
-    font-size: 1rem;
-    max-width: 45rem;
+    font-size: 1.2rem; /* Increased font size */
+    max-width: 60rem; /* Increased max-width for readability */
+    margin-bottom: 2rem; /* Added margin at the bottom */
 }
 
-.worksBtn {
-    margin: 3rem 0;
-    padding: 0.5rem 2.5rem;
-    border: none;
-    border-radius: 2rem;
-    background: white;
-    font-size: 1rem;
-}
-
+/* Container for project images */
 .worksImgs {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: nowrap; /* Prevent items from wrapping */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    width: 100%; /* Set full width */
-    max-width: 65rem; /* Limit maximum width */
-    padding: 0 1rem; /* Add padding to the sides */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 75rem; /* Increased max-width */
+    padding: 0 2rem;
+    gap: 2rem; /* Added gap between images */
 }
 
+/* Increased size for individual image container */
 .worksImgContainer {
     position: relative;
     cursor: pointer;
-    border: 2px solid yellow; /* Add white border */
-    border-radius: 1rem; /* Add rounded corners */
-    overflow: hidden; /* Hide overflow to round corners properly */
-    width: calc(33.33% - 1.5rem); /* Set width to 33.33% minus margins */
-    margin: 0.5rem 0.25rem; /* Add vertical and horizontal margin */
-    height: 300px;
-    background-color: white;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    flex: 0 0 auto; /* Maintain original width */
-    min-width: 15rem;
+    border: 2px solid yellow;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px; /* Increased max-width of the image container */
+    margin: 1rem;
+    height: 350px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Increased size for images */
 .worksImg {
     width: 100%;
-    height: 250px;
-    margin-top: 25px;
+    height: 70%; /* Increased height */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
+/* Increased size for the platform icons */
+.platformIcon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platformIcon svg {
+    font-size: 50px; /* Increased icon size */
+}
+
+/* Increased size for the project title */
 .projectTitle {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increased title size */
     color: white;
     margin-top: 0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Add background color */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 0.5rem;
     box-sizing: border-box;
     position: absolute;
@@ -81,34 +91,28 @@
     width: 100%;
 }
 
-.worksImgOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.worksImgContainer:hover .worksImgOverlay {
-    opacity: 1;
-}
-
+/* Increased size for the project description */
 .projectDescription {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Increased description font size */
     color: white;
-    margin-bottom: 3.5rem;
-    max-width: 94%;
+    margin-bottom: 3rem;
+    max-width: 90%;
     text-align: center;
 }
 
-@media screen and (max-width:585px) {
+/* Increased size for the README description */
+.readmeDescription {
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: 300;
+    color: white;
+    margin-top: 10px;
+    max-width: 90%;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 585px) {
     .worksImg {
         height: 48vw;
     }
@@ -116,9 +120,9 @@
 
 @media screen and (min-width: 768px) {
     .worksImgs {
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
         flex-wrap: wrap;
         width: 95vw;
-        max-width: 65rem;
+        max-width: 75rem;
     }
 }
