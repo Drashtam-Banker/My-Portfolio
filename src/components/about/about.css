@@ -1,131 +1,80 @@
-/* Main section layout */
-#intro {
+/*
+
+About.css
+Drashtam Kinnar Banker
+301497001
+25 Jan 2025
+
+*/
+#about {
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    min-height: 100vh;
-    padding: 4rem 2rem;
-    overflow: hidden;
-    background-color: #f4f4f4;  /* Light Gray Background */
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
 }
 
-/* Content wrapper to arrange image and text side by side */
 .introContent {
     display: flex;
-    flex-direction: row;  /* Row direction for image and content */
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* Image styling */
 .imageWrapper {
-    flex: 1;  /* Image takes up half the space */
+    flex: 1;
     padding-right: 2rem;
 }
 
 .bg {
     width: 100%;
     height: auto;
-    object-fit: cover;  /* Ensure the image fills the space */
-    border-radius: 10px;  /* Optional rounded corners for image */
+    border-radius: 8px;
 }
 
-/* Content wrapper styling */
 .textWrapper {
-    flex: 1;  /* Text takes up the other half of the space */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 2rem;
-    color: #333;
+    flex: 2;
+    text-align: left;
+    padding: 1rem;
 }
 
-/* Hello message styling */
 .hello {
     font-size: 2rem;
-    font-weight: 300;
-    color: #333;
+    font-weight: 400;
 }
 
-/* Main introductory text with name highlight */
 .introText {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    margin-top: 0.5rem;
-    color: #1f4d77;  /* Deep Blue */
 }
 
 .introName {
-    color: #ff9900;  /* Orange color for the name */
+    color: #4e92b8; /* A different color for your name */
 }
 
-/* Description paragraph with line breaks */
 .introPara {
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333;
     margin-top: 1.5rem;
-    max-width: 40rem;
-    color: #666;  /* Medium Gray for description text */
 }
 
-@media screen and (max-width: 1024px) {
-    #intro {
-        padding: 4rem 1.5rem;
-        flex-direction: column;  /* Stack image and text for smaller screens */
-    }
-
-    .imageWrapper,
-    .textWrapper {
-        flex: none;
-        width: 100%;
-    }
-
-    .bg {
-        width: 100%;
-        height: auto;
-    }
-
-    .introText {
-        font-size: 2.4rem;
-    }
-
-    .introPara {
-        font-size: 1rem;
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-    }
+.resumeBtn {
+    margin-top: 2rem;
+    padding: 0.8rem 2.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-    .introText {
-        font-size: 2rem;
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 0.75rem 1.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .introText {
-        font-size: 1.6rem;
-    }
-
-    .introPara {
-        font-size: 0.9rem;
-    }
-
-    .btn {
-        font-size: 0.9rem;
-        padding: 0.6rem 1.2rem;
-    }
+.resumeBtn:hover {
+    background-color: #0056b3;
 }
